@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: "vazir";  
+    src: local("Vazir"),
+      url("../../fonts/Vazir.ttf") format("truetype");
+  }
+.Team-align{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+}
+
+
+.Team-container{
+    direction: rtl;
+    width:80% ;
+margin: 4% 0;
+
+}
+.Team-header{
+font-family: "vazir";
+}
+
+.Team-header p{
+    color: #929292;
+    font-size: 1rem;
+}
+.Team-header h2{
+   font-size: 2.5rem;
+   font-weight: 500;
+}
+
+.Team-card-container{
+display: flex;
+flex-flow: row wrap;
+justify-content:center;
+}

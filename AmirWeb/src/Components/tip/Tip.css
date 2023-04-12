@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "vazir";  
+    src: local("Vazir"),
+      url("../../fonts/Vazir.ttf") format("truetype");
+  }
+:root{
+    --white:#f3f3f3;
+}
+.Tip-container{
+   background: url("./pic/bac-tip2.jpg"); 
+   width: 100%;
+   height:17rem;
+   
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-attachment: fixed;
+overflow: hidden;
+margin: 3% 0 3% 0;
+}
+.Tip-bac{
+    backdrop-filter: brightness(50%);
+    width: 100%;
+    height:17rem;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+}
+.Tip-concat{
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    color:var(--white);
+}
+.Tip-Head{
+    font-family: "vazir";
+    font-weight: 600;
+    font-size: 120%;
+}
+
+.Tip-des{
+    font-size: 100%;
+    font-weight: 500;
+    font-family: "vazir";
+direction: rtl;
+line-height: 130%;
+max-width:80% ;
+}
+
+.Tip-btn {
+    display: block;
+  
+    margin-top: 1.5%;
+border: 2px solid var(--white);
+padding: 0.2rem 1.7rem 0.2rem 1.7rem;
+border-radius: 5px;
+background: transparent;
+text-decoration: none;
+color: var(--white);
+font-family: "vazir";
+font-size: 110%;
+transition: all 200ms linear;
+}
+.Tip-btn:hover{
+background-color: #ffc451;
+color: #121212;
+transition: all 200ms linear;
+}
+
+
+

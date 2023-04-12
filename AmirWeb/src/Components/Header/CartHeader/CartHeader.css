@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "vazir";  
+  src: local("Vazir"),
+    url("../../../fonts/Vazir.ttf") format("truetype");
+}
+
+
+.cart-header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 85%;
+  height:9rem;
+  margin-top: 3%;
+  font-family:"vazir";
+  border: 1.3px solid #828181;
+  font-weight: 500;
+  font-size: 1.5rem;
+  transition: all 200ms linear;
+}
+
+.cart-header:hover {
+  border: 1px solid #ffc451;
+  transition: all 200ms linear;
+}
+
+.cart-header .icon-header {
+  margin-bottom: 4px;
+ font-size: 2.5rem;
+ color: #ffc451 !important;
+}
+
+
+@media (min-width: 48em){
+    .cart-header{
+        width:12rem;
+        margin-left: 1%;
+        margin-bottom: 0;
+        margin-top: 3%;
+    }
+}

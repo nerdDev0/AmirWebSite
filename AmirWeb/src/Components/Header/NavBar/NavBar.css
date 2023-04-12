@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "vazir";  
+  src: local("Vazir"),
+    url("../../../fonts/Vazir.ttf") format("truetype");
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  /* navbar */
+  
+  .navbar {
+    text-align: right;
+    background: #02020288;
+    color: #f4f4f4;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.516);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    padding: 2% 2% 1.5% 0%;
+  }
+
+  .navbar-scrolled{
+   
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    color: black;
+    height: auto;
+  }
+  
+  .navbar li a {
+   font-family: "vazir";
+   font-size: 1rem;
+    display: block;
+    color: black;
+    padding: 5px 5px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    transition: all 200ms linear;
+  }
+  
+  .navbar li a:hover,
+  .navbar .menu-btn:hover {
+    background-color: #ffc451;
+    transition: all 200ms linear;
+  }
+  .home{
+    background-color: #ffc451;
+  }
+  .btn--logo {
+    display: inline-flex;
+    
+    align-self: center;
+    justify-content: end;
+   margin:2% 3% 0 0;
+    max-width: 85%;
+  
+  }
+  .btn-start {
+    font-family: "vazir";
+    display: inline-flex;
+    width: 4.5rem;
+    padding: 0.25rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    justify-content: center;
+    align-content: start;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #ffc451;
+    border-radius: 3px;
+    transition: all 300ms linear;
+  }
+  .btn-start:hover{
+    transition: all 200ms linear;
+    background-color: #ffc451;
+    color: #000;
+  }
+  .logo {
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 0.4rem;
+    margin-left: 0.5rem;
+    color: #f4f4f4;
+    font-weight: 600;
+  }
+  .logo2 {
+    display: none;
+    font-weight: 600;
+   
+  }
+  /* menu */
+  
+  .navbar .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .navbar .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    position: relative;
+    user-select: none;
+  }
+  
+  .navbar .menu-icon .navicon {
+    background: #f5f5f5;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  
+  .navbar .menu-icon .navicon:before,
+  .navbar .menu-icon .navicon:after {
+    background: #f5f5f5;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  
+  .navbar .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .navbar .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .navbar .menu-btn {
+    display: none;
+  }
+  
+  .navbar .menu-btn:checked ~ .menu {
+    max-height: 300px;
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 67em) {
+    .navbar {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    .navbar .menu {
+      background: none;
+    }
+    .navbar .menu li {
+      border: none;
+     
+    }
+    .navbar li a {
+      font-size: 1rem !important;
+      color: #f4f4f4;
+      padding: 1rem 1rem;
+      border: none;
+    }
+    .navbar .menu {
+      direction: rtl;
+      clear: none;
+      display: flex;
+      max-height: none;
+      width: 50%;
+      justify-content: center;
+    }
+    .navbar .menu-icon {
+      display: none;
+    }
+    .navbar li a:hover,
+    .navbar .menu-btn:hover {
+      color: #ffc451;
+      background: none;
+    }
+    .home{
+      background: none;
+      color: #ffc451 !important;
+    }
+    .btn--logo {
+     margin-top: 0;
+      display: flex;
+      width: 25%;
+      justify-content: center;
+    }
+    .logo {
+      display: none;
+    }
+    .logo2 {
+      display: flex;
+      justify-content: center;
+      width: 25%;
+      font-size: 2rem;
+    
+      text-decoration: none;
+      color: #f4f4f4;
+      padding: 1% 0 0% 0;
+      
+    }
+  }
+  

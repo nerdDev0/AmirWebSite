@@ -1,0 +1,65 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@font-face {
+    font-family: "vazir";  
+    src: local("Vazir"),
+      url("../../fonts/Vazir.ttf") format("truetype");
+  }
+
+.Services-align{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+}
+.Services-container{
+    display: flex;
+    flex-flow: column nowrap;
+   align-self: center;
+direction: rtl;
+width: 80%;
+}
+
+.Services-header{
+padding-bottom: 2%;
+font-family:"vazir";
+}
+.Services-header h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.Services--container-servicesCard{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    margin: 2% 0 6% 0;
+    direction: rtl;
+}
+
+@media (max-width: 58em){
+    .Services--container-servicesCard{
+        grid-template-columns: 40% 40%;
+        grid-template-rows: auto auto auto;
+
+    }
+}
+
+@media (max-width: 48em){
+    .Services--container-servicesCard{
+        grid-template-columns:95%;
+        grid-template-rows:auto auto auto auto auto auto;
+
+    }
+    .Services-header h2{
+        font-size: 1.5rem;
+    
+    }
+}

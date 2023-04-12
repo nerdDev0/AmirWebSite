@@ -1,0 +1,25 @@
+
+.ProductCarts-container{
+display: flex;
+direction: rtl;
+align-content: center;
+}
+
+.ProductCarts-logo{
+padding: 2%;
+font-size: 2.3rem;
+color: #ffc451;
+}
+
+.ProductCarts-text{
+
+}
+
+.ProductCarts-text__head{
+font-family: "vazir";
+}
+
+.ProductCarts-text__des{
+    font-family: "vazir";
+    color: #969696;
+}

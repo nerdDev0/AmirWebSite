@@ -1,0 +1,48 @@
+.container-servicesCard{
+    max-width:100%;
+    height:18rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #e4e2e2;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+    transition-delay: 100ms;
+    
+}
+.container-servicesCard:hover{
+    border: 0px solid #e4e2e2;
+    transition: all 300ms ease-in-out;
+    transition-delay: 100ms;
+    transform: translate(0px,-6px);
+    
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+
+.servicesCard-logo{
+    width: 50px;
+    height: 40px;
+    padding: 13px 10px;
+font-size: 2.2rem;
+color: #1a1a1a;
+background-color: #ffc451;
+border-radius: 5px;
+margin-bottom:3%;
+}
+.servicesCard-header{
+font-family: "vazir";
+margin-bottom:1%;
+}
+
+.servicesCard-header:hover{
+    color: #ffc451;
+    transition: all 200ms linear;
+}
+
+.servicesCard-des{
+padding: 1% 2% 1% 2%;
+    font-family: "vazir";
+    color: #6e6e6e;
+}

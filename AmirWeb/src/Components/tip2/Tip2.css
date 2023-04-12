@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: "vazir";  
+    src: local("Vazir"),
+      url("../../fonts/Vazir.ttf") format("truetype");
+  }
+
+.Tip2-container {
+    direction: rtl;
+    text-align: center;
+  background: url("./pic/tip2.jpg");
+  width: 100%;
+  height: 27rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  margin: 3% 0 3% 0;
+}
+.Tip2-bac {
+    backdrop-filter: brightness(55%);
+    width: 100%;
+    height:27rem;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.Tip2-concat {
+    width: 70%;
+    margin-top:5%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+color: white;
+}
+.Tip2-Avatar {
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+   font-family: "vazir";
+   margin-bottom: 2%;
+}
+.Tip2-Avatar__img{
+    width: 100px;
+    height: 100px;
+  
+    
+    margin-bottom: 2%;
+}
+.Tip2-Avatar__img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+}
+.Tip2-Avatar__name {
+    font-size: 1rem;
+
+}
+.Tip2-Avatar__jobName {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #c9c9c9 !important;
+}
+.Tip2-text{
+font-size: 1rem;
+font-family: "vazir";
+word-spacing: 100%;
+}
